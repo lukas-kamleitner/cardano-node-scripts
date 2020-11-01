@@ -1,0 +1,14 @@
+[Unit]
+Description=Restarts the cardano-node
+After=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=forking
+Restart=always
+RuntimeMaxSec=43200
+User=YOUR_USER
+ExecStart=/opt/cardano/cnode/scripts/restartRelayNodeX.sh
+
+[Install]
+WantedBy=multi-user.target
