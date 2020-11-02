@@ -1,0 +1,14 @@
+[Unit]
+Description=Node Exporter
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+Restart=on-failure
+ExecStart=/opt/cardano/monitoring/node_exporter-1.0.1/node_exporter --web.listen-address="0.0.0.0:9091"
+WorkingDirectory=/opt/cardano/monitoring/node_exporter-1.0.1/
+LimitNOFILE=3500
+
+[Install]
+WantedBy=multi-user.target
