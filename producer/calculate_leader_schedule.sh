@@ -4,4 +4,5 @@ sigmaValue=$(python3 /home/cardano-block/pooltool.io/leaderLogs/getSigma.py --le
 
 echo ${sigmaValue}
 
-python3 /home/cardano-block/pooltool.io/leaderLogs/leaderLogs.py --pool-id $(cat ${NODE_HOME}/stakepoolid.txt) --sigma ${sigmaValue} --vrf-skey ${NODE_HOME}/vrf.skey
+python3 /home/cardano-block/pooltool.io/leaderLogs/leaderLogs.py --pool-id $(cat ${NODE_HOME}/stakepoolid.txt) --sigma ${sigmaValue} --vrf-skey ${NODE_HOME}/vrf.skey --tz Europe/Vienna
+
