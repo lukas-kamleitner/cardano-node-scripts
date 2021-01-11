@@ -33,7 +33,7 @@ scrape_configs:
         type: 'cardano-node'
   - job_name: 'relay2_cardano_node'
     static_configs:
-    - targets: ['178.77.98.93:12798']
+    - targets: ['x.x.x.x:12798']
       labels:
         alias: 'relay2'
         type:  'cardano-node'
