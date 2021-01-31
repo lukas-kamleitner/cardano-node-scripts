@@ -6,7 +6,7 @@ StartLimitIntervalSec=0
 [Service]
 Type=forking
 Restart=always
-RuntimeMaxSec=43200
+RuntimeMaxSec=86400
 User=YOUR_USER
 ExecStart=/opt/cardano/cnode/scripts/restartRelayNodeX.sh
 
